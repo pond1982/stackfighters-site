@@ -6,3 +6,6 @@ html{scroll-padding-top:1rem}body{color:var(--ink);background:#fff;line-height:1
 @media(max-width:991px){.masthead{padding:3.5rem 0}.masthead .lead{margin:auto}.masthead-device-mockup{margin-top:2.5rem}.detail-content .features,.roster{grid-template-columns:repeat(2,minmax(0,1fr))}.site-links{gap:.2rem 1rem}.hero-image{max-height:28rem}.hero-image.phone{max-height:28rem}}
 @media(max-width:575px){.container.px-5{padding-left:1.25rem!important;padding-right:1.25rem!important}#mainNav .container{display:block}.site-links{margin-top:.7rem;gap:.1rem 1rem}.site-links a{font-size:.83rem}.masthead h1{font-size:2.8rem}.masthead-device-mockup{min-height:18rem}.hero-image{max-width:90%}.hero-image.phone{max-height:26rem}.detail-content .features,.blocks,.biome-strip{grid-template-columns:1fr}.roster{gap:.7rem}.roster__card{padding:.8rem}.screenshot-scroll{grid-template-columns:repeat(2,minmax(0,1fr))}.feature-item{text-align:left!important}.feature-number{font-size:1.7rem}.legal-content{padding-top:2.5rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition:none!important}}
+
+/* Keep New Age row gutters inside narrow-screen containers. */
+@media(max-width:575px){.row.gx-5{--bs-gutter-x:2rem}}
