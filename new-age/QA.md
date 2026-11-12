@@ -1,14 +1,24 @@
 # Review checklist
 
-- Verified deployed homepage exactly matches the original repository source before edits.
-- Local HTML page, asset and fragment links pass static checks.
+## Passed
+
+- Deployed homepage matched the original repository source before editing.
+- Static local HTML page, asset and fragment links pass.
 - Existing support/privacy/terms main text and contact links preserved.
-- Verified released-app App Store target from the official Apple listing.
-- All pages include personal portfolio and app directory links. The app directory is part of a separate portfolio change and may not be live until that is merged.
-- No placeholder download links, demo forms or Android claims added.
-- Base New Age MIT license retained. Existing hosting configuration unchanged.
-- Responsive CSS, keyboard focus and reduced-motion rules provided; no JavaScript is required for navigation.
+- Released-app App Store target verified against the official Apple listing.
+- Every page links to the personal portfolio and its verified app section, `https://pond1982.github.io/Pondd-Page/index.html#apps`. This section is part of the companion portfolio PR.
+- No demo forms, placeholder download links or Android claims added.
+- Base New Age MIT license retained; existing hosting configuration unchanged.
+- All 14 HTML pages across Landslide, 21 Counts, Stack Fighters, StackCycle and The AI Company rendered in the supported cloud browser at 320, 390 and 1365 px: no document overflow, missing H1 or broken loaded image assets.
+- Browser review caught narrow-screen gutters, now corrected and retested.
+- Representative visual inspection: 21 Counts desktop/mobile and StackCycle mobile.
+- Shared keyboard sample on 21 Counts: first Tab reveals Skip to content, Enter reaches main, next Tab reaches the App Store hero link, and six following Tabs continue without a trap.
 
-## Still to verify before merge
+## Verification limits
 
-Rendered desktop/mobile/200% zoom and keyboard tests were not run: installed Chromium aborts with `socket() Operation not permitted` in this execution environment. Static checks are not a substitute for browser QA. Keep this PR in draft until these checks are completed.
+- No axe/Lighthouse, real-mobile-device or complete accessibility audit.
+- 200% zoom could not be verified with the available browser controls.
+- Full external CTA navigation was not exercised.
+- Navigation works without JavaScript; focus and reduced-motion styles are implemented, not a substitute for the unrun checks above.
+
+Keep as a draft for owner review. No production merge or hosting-settings changes.
