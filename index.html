@@ -1,175 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack Fighters — A Battle-Puzzle Fighter</title>
-    <meta name="description" content="Stack Fighters is a 1v1 battle-puzzle fighter for iOS. Six warriors, forty-two cutscenes, local & online multiplayer, and one Ancient Scroll of Ultimate Bragging Rights.">
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stack Fighters — A Battle-Puzzle Fighter</title>
+<meta content="Stack Fighters is a 1v1 battle-puzzle fighter for iOS. Six warriors, forty-two cutscenes, local &amp; online multiplayer, and one Ancient Scroll of Ultimate Bragging Rights." name="description"/>
+<!-- Open Graph for social sharing -->
+<meta content="Stack Fighters — A Battle-Puzzle Fighter" property="og:title"/>
+<meta content="Stack blocks, chain combos, fight six warriors for the Ancient Scroll of Ultimate Bragging Rights. iOS, free." property="og:description"/>
+<meta content="assets/hero_bg.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<link href="assets/icon.png" rel="icon" type="image/png"/>
+<link href="assets/icon.png" rel="apple-touch-icon"/>
 
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="Stack Fighters — A Battle-Puzzle Fighter">
-    <meta property="og:description" content="Stack blocks, chain combos, fight six warriors for the Ancient Scroll of Ultimate Bragging Rights. iOS, free.">
-    <meta property="og:image" content="assets/hero_bg.png">
-    <meta property="og:type" content="website">
-
-    <link rel="icon" href="assets/icon.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/icon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<nav class="site-nav">
-    <a class="site-nav__brand" href="index.html">
-        <img src="assets/icon.png" alt="Stack Fighters">
-        <span>Stack Fighters</span>
-    </a>
-    <div class="site-nav__links">
-        <a href="index.html" class="active">Home</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-    </div>
-</nav>
-
-<!-- ===== HERO ===== -->
-<header class="hero">
-    <img class="hero__logo" src="assets/title_logo.png" alt="Stack Fighters logo">
-    <p class="hero__tagline">
-        A battle-puzzle fighter where every match you make lands a punch.<br>
-        Six warriors. Forty-two cutscenes. One Ancient Scroll of Ultimate Bragging Rights.
-    </p>
-    <a class="hero__cta" href="support.html">📱 Get Support</a>
-    <span class="hero__cta-note">Coming soon to the App Store</span>
-</header>
-
-<!-- ===== FEATURES ===== -->
-<section class="section">
-    <h2 class="section__title">What Makes It Different</h2>
-    <p class="section__lede">Stack-match pieces explode into punches. Chain them, unleash ultimates, send debris to jam your opponent's board.</p>
-
-    <div class="features">
-        <div class="features__item">
-            <span class="features__icon">⚔️</span>
-            <div class="features__title">Stack-Match Combat</div>
-            <div class="features__desc">Four block types, four combat effects. Damage, healing, MP, debris. Every match is a punch.</div>
-        </div>
-        <div class="features__item">
-            <span class="features__icon">🔥</span>
-            <div class="features__title">Six Unique Fighters</div>
-            <div class="features__desc">Each with an elemental affinity, signature ultimate, and a lighthearted story arc.</div>
-        </div>
-        <div class="features__item">
-            <span class="features__icon">📜</span>
-            <div class="features__title">42 Story Cutscenes</div>
-            <div class="features__desc">Six arcade-ladder paths. Goofy, lighthearted, surprisingly heartfelt.</div>
-        </div>
-        <div class="features__item">
-            <span class="features__icon">🌐</span>
-            <div class="features__title">Multiplayer</div>
-            <div class="features__desc">Local Bluetooth / Wi-Fi matches, or online 1v1 via Game Center. Rematch on the same session.</div>
-        </div>
-        <div class="features__item">
-            <span class="features__icon">🏆</span>
-            <div class="features__title">Leaderboards</div>
-            <div class="features__desc">Game Center integration. Longest chain, most victories, scrolls claimed.</div>
-        </div>
-        <div class="features__item">
-            <span class="features__icon">✨</span>
-            <div class="features__title">No Ads. No IAP.</div>
-            <div class="features__desc">Zero tracking. The whole game upfront.</div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== ROSTER ===== -->
-<section class="section">
-    <h2 class="section__title">The Roster</h2>
-    <p class="section__lede">Six warriors drawn from history, each fighting for a gloriously petty reason.</p>
-
-    <div class="roster">
-        <div class="roster__card">
-            <img class="roster__face" src="assets/phraya.png" alt="Phraya">
-            <div class="roster__name">Phraya</div>
-            <div class="roster__origin">Thailand · Strike</div>
-            <div class="roster__ult">Giant's Roar<br><em>150 dmg + debris → strike</em></div>
-        </div>
-        <div class="roster__card">
-            <img class="roster__face" src="assets/akiko.png" alt="Akiko">
-            <div class="roster__name">Akiko</div>
-            <div class="roster__origin">Japan · Spirit</div>
-            <div class="roster__ult">Silent Stroke<br><em>Clear 3 rows + 15 dmg each</em></div>
-        </div>
-        <div class="roster__card">
-            <img class="roster__face" src="assets/ragnar.png" alt="Ragnar">
-            <div class="roster__name">Ragnar</div>
-            <div class="roster__origin">Norse · Tactics</div>
-            <div class="roster__ult">World-Crush<br><em>6 debris + 60 dmg</em></div>
-        </div>
-        <div class="roster__card">
-            <img class="roster__face" src="assets/citlali.png" alt="Citlali">
-            <div class="roster__name">Citlali</div>
-            <div class="roster__origin">Aztec · Vitality</div>
-            <div class="roster__ult">Blood Moon<br><em>150 dmg, heal 50%</em></div>
-        </div>
-        <div class="roster__card">
-            <img class="roster__face" src="assets/alaric.png" alt="Alaric">
-            <div class="roster__name">Alaric</div>
-            <div class="roster__origin">Knight · Strike</div>
-            <div class="roster__ult">Iron Wall<br><em>Heal 250 + shield</em></div>
-        </div>
-        <div class="roster__card">
-            <img class="roster__face" src="assets/zoya.png" alt="Zoya">
-            <div class="roster__name">Zoya</div>
-            <div class="roster__origin">Nomad · Tactics</div>
-            <div class="roster__ult">Sandstorm<br><em>Scramble + 80 dmg</em></div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== BLOCK TYPES ===== -->
-<section class="section">
-    <h2 class="section__title">The Four Elements</h2>
-    <p class="section__lede">Every block match fires a different kind of attack.</p>
-
-    <div class="blocks">
-        <div class="blocks__item">
-            <img src="assets/block_strike.png" alt="Strike block">
-            <div>
-                <div class="blocks__item-name">Strike</div>
-                <div class="blocks__item-desc">30 damage per block. The straightforward punch.</div>
-            </div>
-        </div>
-        <div class="blocks__item">
-            <img src="assets/block_vitality.png" alt="Vitality block">
-            <div>
-                <div class="blocks__item-name">Vitality</div>
-                <div class="blocks__item-desc">20 healing per block. Hold the line.</div>
-            </div>
-        </div>
-        <div class="blocks__item">
-            <img src="assets/block_spirit.png" alt="Spirit block">
-            <div>
-                <div class="blocks__item-name">Spirit</div>
-                <div class="blocks__item-desc">Charges your ultimate. 7 MP per block.</div>
-            </div>
-        </div>
-        <div class="blocks__item">
-            <img src="assets/block_tactics.png" alt="Tactics block">
-            <div>
-                <div class="blocks__item-name">Tactics</div>
-                <div class="blocks__item-desc">Sends debris to jam your opponent's board.</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-    <p>© 2026 Suwitcha Sugthana · Stack Fighters is an independent indie release.</p>
-    <p style="margin-top: 6px;">
-        <a href="support.html">Support</a> ·
+<link href="new-age/css/styles.css" rel="stylesheet"/><link href="new-age/css/app.css" rel="stylesheet"/></head><body><a class="skip-link" href="#main-content">Skip to content</a><nav class="navbar navbar-light shadow-sm" id="mainNav" aria-label="Main navigation"><div class="container px-5"><a class="navbar-brand fw-bold" href="index.html">Stack Fighters</a><div class="site-links"><a href="index.html#features">Features</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="https://pond1982.github.io/Pondd-Page/index.html#apps">All apps</a></div></div></nav><main id="main-content"><header class="masthead"><div class="container px-5"><div class="row gx-5 align-items-center"><div class="col-lg-6 text-center text-lg-start"><p class="eyebrow">Battle-puzzle fighter · iPhone</p><h1 class="display-1 mb-4">Every match<br>lands a punch.</h1><p class="lead mb-4">Stack blocks, chain combos and unleash your ultimate. Six warriors are fighting for one Ancient Scroll of Ultimate Bragging Rights.</p><div class="d-flex flex-wrap gap-4 align-items-center justify-content-center justify-content-lg-start"><a class="download-link" href="https://apps.apple.com/gb/app/stack-fighters-puzzle-battle/id6762288266" aria-label="View Stack Fighters: Puzzle Battle on the App Store"><img class="app-badge" src="new-age/assets/img/app-store-badge.svg" alt="Download on the App Store" width="150" height="50"></a><a class="text-link" href="#features">Explore the app ↓</a></div></div><div class="col-lg-6"><div class="masthead-device-mockup"><span class="art-orb" aria-hidden="true"></span><img class="hero-image art" src="assets/hero_bg.png" alt="The torch-lit arena from Stack Fighters" fetchpriority="high"></div></div></div></div></header><aside class="statement text-center text-white bg-gradient-primary-to-secondary"><div class="container px-5"><h2>Six warriors. Forty-two cutscenes. One gloriously petty rivalry.</h2></div></aside><section id="features" class="features-section"><div class="container px-5"><div class="row gx-5"><div class="col-lg-4 mb-4"><p class="eyebrow">A closer look</p><h2>Small screen.<br>Big possibilities.</h2><a class="text-link" href="#inside">Discover Stack Fighters ↓</a></div><div class="col-lg-8"><div class="row gx-5"><div class="col-md-6"><div class="feature-item mb-4"><span class="feature-number" aria-hidden="true">01</span><h3>Stack-match combat</h3><p>Four block types turn your matches into damage, healing, power and debris.</p></div></div><div class="col-md-6"><div class="feature-item mb-4"><span class="feature-number" aria-hidden="true">02</span><h3>Six distinct fighters</h3><p>Each warrior brings an elemental affinity, a signature ultimate and a story.</p></div></div><div class="col-md-6"><div class="feature-item mb-4"><span class="feature-number" aria-hidden="true">03</span><h3>Play together</h3><p>Battle nearby over Bluetooth or Wi-Fi, or online through Game Center.</p></div></div><div class="col-md-6"><div class="feature-item mb-4"><span class="feature-number" aria-hidden="true">04</span><h3>The whole game</h3><p>No ads, tracking or in-app purchases. Just one more match.</p></div></div></div></div></div></div></section><section id="inside" class="detail-section"><div class="container px-5"><h2>Meet your next rival</h2><div class="detail-content"><section class="section">
+<h2 class="section__title">What Makes It Different</h2>
+<p class="section__lede">Stack-match pieces explode into punches. Chain them, unleash ultimates, send debris to jam your opponent's board.</p>
+<div class="features">
+<div class="features__item">
+<span class="features__icon">⚔️</span>
+<div class="features__title">Stack-Match Combat</div>
+<div class="features__desc">Four block types, four combat effects. Damage, healing, MP, debris. Every match is a punch.</div>
+</div>
+<div class="features__item">
+<span class="features__icon">🔥</span>
+<div class="features__title">Six Unique Fighters</div>
+<div class="features__desc">Each with an elemental affinity, signature ultimate, and a lighthearted story arc.</div>
+</div>
+<div class="features__item">
+<span class="features__icon">📜</span>
+<div class="features__title">42 Story Cutscenes</div>
+<div class="features__desc">Six arcade-ladder paths. Goofy, lighthearted, surprisingly heartfelt.</div>
+</div>
+<div class="features__item">
+<span class="features__icon">🌐</span>
+<div class="features__title">Multiplayer</div>
+<div class="features__desc">Local Bluetooth / Wi-Fi matches, or online 1v1 via Game Center. Rematch on the same session.</div>
+</div>
+<div class="features__item">
+<span class="features__icon">🏆</span>
+<div class="features__title">Leaderboards</div>
+<div class="features__desc">Game Center integration. Longest chain, most victories, scrolls claimed.</div>
+</div>
+<div class="features__item">
+<span class="features__icon">✨</span>
+<div class="features__title">No Ads. No IAP.</div>
+<div class="features__desc">Zero tracking. The whole game upfront.</div>
+</div>
+</div>
+</section><section class="section">
+<h2 class="section__title">The Roster</h2>
+<p class="section__lede">Six warriors drawn from history, each fighting for a gloriously petty reason.</p>
+<div class="roster">
+<div class="roster__card">
+<img alt="Phraya" class="roster__face" src="assets/phraya.png"/>
+<div class="roster__name">Phraya</div>
+<div class="roster__origin">Thailand · Strike</div>
+<div class="roster__ult">Giant's Roar<br/><em>150 dmg + debris → strike</em></div>
+</div>
+<div class="roster__card">
+<img alt="Akiko" class="roster__face" src="assets/akiko.png"/>
+<div class="roster__name">Akiko</div>
+<div class="roster__origin">Japan · Spirit</div>
+<div class="roster__ult">Silent Stroke<br/><em>Clear 3 rows + 15 dmg each</em></div>
+</div>
+<div class="roster__card">
+<img alt="Ragnar" class="roster__face" src="assets/ragnar.png"/>
+<div class="roster__name">Ragnar</div>
+<div class="roster__origin">Norse · Tactics</div>
+<div class="roster__ult">World-Crush<br/><em>6 debris + 60 dmg</em></div>
+</div>
+<div class="roster__card">
+<img alt="Citlali" class="roster__face" src="assets/citlali.png"/>
+<div class="roster__name">Citlali</div>
+<div class="roster__origin">Aztec · Vitality</div>
+<div class="roster__ult">Blood Moon<br/><em>150 dmg, heal 50%</em></div>
+</div>
+<div class="roster__card">
+<img alt="Alaric" class="roster__face" src="assets/alaric.png"/>
+<div class="roster__name">Alaric</div>
+<div class="roster__origin">Knight · Strike</div>
+<div class="roster__ult">Iron Wall<br/><em>Heal 250 + shield</em></div>
+</div>
+<div class="roster__card">
+<img alt="Zoya" class="roster__face" src="assets/zoya.png"/>
+<div class="roster__name">Zoya</div>
+<div class="roster__origin">Nomad · Tactics</div>
+<div class="roster__ult">Sandstorm<br/><em>Scramble + 80 dmg</em></div>
+</div>
+</div>
+</section><section class="section">
+<h2 class="section__title">The Four Elements</h2>
+<p class="section__lede">Every block match fires a different kind of attack.</p>
+<div class="blocks">
+<div class="blocks__item">
+<img alt="Strike block" src="assets/block_strike.png"/>
+<div>
+<div class="blocks__item-name">Strike</div>
+<div class="blocks__item-desc">30 damage per block. The straightforward punch.</div>
+</div>
+</div>
+<div class="blocks__item">
+<img alt="Vitality block" src="assets/block_vitality.png"/>
+<div>
+<div class="blocks__item-name">Vitality</div>
+<div class="blocks__item-desc">20 healing per block. Hold the line.</div>
+</div>
+</div>
+<div class="blocks__item">
+<img alt="Spirit block" src="assets/block_spirit.png"/>
+<div>
+<div class="blocks__item-name">Spirit</div>
+<div class="blocks__item-desc">Charges your ultimate. 7 MP per block.</div>
+</div>
+</div>
+<div class="blocks__item">
+<img alt="Tactics block" src="assets/block_tactics.png"/>
+<div>
+<div class="blocks__item-name">Tactics</div>
+<div class="blocks__item-desc">Sends debris to jam your opponent's board.</div>
+</div>
+</div>
+</div>
+</section></div></div></section><section id="download" class="download-section text-center text-white bg-gradient-primary-to-secondary"><div class="container px-5"><h2 class="mb-3">Enter the arena.</h2><p>Explore Stack Fighters on the App Store.</p><a class="download-link" href="https://apps.apple.com/gb/app/stack-fighters-puzzle-battle/id6762288266" aria-label="View Stack Fighters: Puzzle Battle on the App Store"><img class="app-badge" src="new-age/assets/img/app-store-badge.svg" alt="Download on the App Store" width="150" height="50"></a></div></section></main><footer class="site-footer"><div class="container px-5"><div class="footer-links"><a href="https://pond1982.github.io/Pondd-Page/">Made by Pondd</a><a href="https://pond1982.github.io/Pondd-Page/index.html#apps">Explore all apps</a></div><div class="footer-original">
+<p>© 2026 Suwitcha Sugthana · Stack Fighters is an independent indie release.</p>
+<p style="margin-top: 6px;">
+<a href="support.html">Support</a> ·
         <a href="privacy.html">Privacy Policy</a>
-    </p>
-</footer>
-
-</body>
-</html>
+</p>
+</div></div></footer></body></html>
